@@ -4,13 +4,12 @@ const Age = () => {
   const [age, setAge] = useState();
 
   const tick = () => {
-    const divisor = 1000 * 60 * 60 * 24 * 365.2421897; // ms in an average year
-    const birthTime = new Date('1990-02-05T09:24:00');
-    setAge(((Date.now() - birthTime) / divisor).toFixed(11));
+    const random = Math.floor(Math.random() * 50);
+    setAge(random);
   };
 
   useEffect(() => {
-    const timer = setInterval(() => tick(), 25);
+    const timer = setInterval(() => tick(), 1000);
     return () => {
       clearInterval(timer);
     };
@@ -25,16 +24,16 @@ const data = [
     value: <Age />,
   },
   {
-    key: 'countries',
-    label: 'Countries visited',
-    value: 53,
+    key: 'eclipse',
+    label: 'Eclipse count',
+    value: 5,
     link:
-      'https://www.google.com/maps/d/embed?mid=1iBBTscqateQ93pWFVfHCUZXoDu8&z=2',
+      'https://www.eclipse-chaser-log.com/eclipse-log/793',
   },
   {
-    key: 'location',
-    label: 'Current city',
-    value: 'New York, NY',
+    key: 'countries',
+    label: 'Countries visited',
+    value: '11',
   },
 ];
 

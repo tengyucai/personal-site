@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react';
 
 // Validates the first half of an email address.
-const validateText = (text) => {
-  // NOTE: Passes RFC 5322 but not tested on google's standard.
-  // eslint-disable-next-line no-useless-escape
-  const re = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))$/;
-  return re.test(text) || text.length === 0;
-};
+// const validateText = (text) => {
+//   // NOTE: Passes RFC 5322 but not tested on google's standard.
+//   // eslint-disable-next-line no-useless-escape
+//   const re = /^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))$/;
+//   return re.test(text) || text.length === 0;
+// };
 
 const messages = [
   'hi',
@@ -49,7 +49,7 @@ const EmailLink = () => {
   const delay = 50; // tick length in mS
 
   const [idx, updateIter] = useState(0); // points to current message
-  const [message, updateMessage] = useState(messages[idx]);
+  // const [message, updateMessage] = useState(messages[idx]);
   const [char, updateChar] = useState(messages[idx].length); // points to current char
   const [isActive, setIsActive] = useState(true); // disable when all messages are printed
 
@@ -63,7 +63,7 @@ const EmailLink = () => {
     if (newIdx === messages.length) {
       setIsActive(false);
     } else {
-      updateMessage(messages[newIdx].slice(0, newChar));
+      // updateMessage(messages[newIdx].slice(0, newChar));
       updateIter(newIdx);
       updateChar(newChar + 1);
     }
@@ -72,13 +72,16 @@ const EmailLink = () => {
   return (
     <div
       className="inline-container"
-      style={validateText(message) ? {} : { color: 'red' }}
+      // style={validateText(message) ? {} : { color: 'red' }}
       onMouseEnter={() => setIsActive(false)}
       onMouseLeave={() => (idx < messages.length) && setIsActive(true)}
     >
-      <a href={validateText(message) ? `mailto:${message}@mldangelo.com` : ''}>
+      {/* <a href={validateText(message) ? `mailto:${message}@mldangelo.com` : ''}>
         <span>{message}</span>
         <span>@mldangelo.com</span>
+      </a> */}
+      <a href="mailto:tengyucai@gmail.com">
+        <span>tengyucai@gmail.com</span>
       </a>
     </div>
   );

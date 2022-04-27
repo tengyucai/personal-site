@@ -3,14 +3,9 @@
 
 const skills = [
   {
-    title: 'Javascript',
+    title: 'Python',
     competency: 4,
     category: ['Web Development', 'Languages', 'Javascript'],
-  },
-  {
-    title: 'Node.JS',
-    competency: 3,
-    category: ['Web Development', 'Javascript'],
   },
   {
     title: 'React',
@@ -23,54 +18,9 @@ const skills = [
     category: ['Tools', 'Languages'],
   },
   {
-    title: 'Amazon Web Services',
-    competency: 4,
-    category: ['Web Development', 'Tools'],
-  },
-  {
-    title: 'Heroku',
-    competency: 2,
-    category: ['Web Development', 'Tools'],
-  },
-  {
     title: 'MongoDB',
     competency: 3,
     category: ['Web Development', 'Databases'],
-  },
-  {
-    title: 'ElasticSearch',
-    competency: 2,
-    category: ['Web Development', 'Databases'],
-  },
-  {
-    title: 'PostgreSQL/SQLite3/SQL',
-    competency: 4,
-    category: ['Web Development', 'Databases', 'Languages'],
-  },
-  {
-    title: 'Redis',
-    competency: 3,
-    category: ['Web Development', 'Databases'],
-  },
-  {
-    title: 'Data Mining',
-    competency: 3,
-    category: ['Data Science'],
-  },
-  {
-    title: 'Express.JS',
-    competency: 2,
-    category: ['Web Development', 'Javascript'],
-  },
-  {
-    title: 'D3',
-    competency: 2,
-    category: ['Web Development', 'Javascript'],
-  },
-  {
-    title: 'Flask',
-    competency: 2,
-    category: ['Web Development', 'Python'],
   },
   {
     title: 'Git/Mercurial',
