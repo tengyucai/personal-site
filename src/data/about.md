@@ -19,3 +19,5 @@ I am an Astronomy Amurter for years and I am currently a Senior Software Enginee
 - 08/21/2017 (total, seen partial) at Canada
 - 10/23/2014 (partial) at United States
 - 07/22/2009 (total) at China
+
+<img src="https://www.solar-eclipse.info/eclipse/images/my/793-Tengyu-Cai/eclipse_map.jpg" width="100%">
